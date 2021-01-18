@@ -34,8 +34,8 @@
             <h1>加入Google TeamDrive</h1>
              <p>${scriptversion}</p>
             <p>
-              后端多个API请求, 过程耗时较长, 请耐心等待,
-              <span style="color: red"><b>切勿重复提交</b></span>
+              Multiple API requests on the backend, the process takes a long time, please be patient,
+              <span style="color: red"><b>Do not submit repeatedly</b></span>
             </p>
             <br />
             <div class="info-form text-left">
@@ -48,7 +48,7 @@
                           type="email"
                           class="form-control"
                           id="emailAddress"
-                          placeholder="您的GMail邮箱地址"
+                          placeholder="Your GMail email address"
                   />
                 </div>
                 ${captcha_prompt}
@@ -78,7 +78,7 @@
               </div>
             </div>
             <div clas="loader-txt">
-              <p>正在创建中...</p>
+              <p>Creating...</p>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
       <div class="footer-copyright text-center py-3">
         © 2020 ${bottom_copyRight}
         <br />
-        源码:<a href="https://github.com/clatteringmarion/GDAutoAdd/blob/master/main.js">GitHub</a>
+        Source code:<a href="https://github.com/clatteringmarion/GDAutoAdd/blob/master/main.js">GitHub</a>
         <br />
         Special Thanks:
         <a href="https://github.com/donwa/goindex">
@@ -120,11 +120,11 @@
           }),
           success: function(data) {
             $("#loadMe").modal("hide");
-            alert("成功!");
+            alert("success!");
           },
           error: function(request, status, error) {
             $("#loadMe").modal("hide");
-            alert("失败!" + request.responseText);
+            alert("failure!" + request.responseText);
           },
           contentType: "application/json"
         });
